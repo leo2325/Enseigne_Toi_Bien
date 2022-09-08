@@ -1,0 +1,506 @@
+@font-face{	font-family: "ChampagneLimousines";
+    		src: url(../fonts/ChampagneLimousines.ttf);
+    		font-weight: normal;
+   			font-style: normal;}
+*{	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;}
+h1, h4{
+	display:none;
+}
+
+/*-----------------BOX SHADOW----------------*/
+nav li, .realisation, #carClients, #goRealisations, #callMe, #mailMe, #facebook, #instagram, #snap{
+	box-shadow: 0 -2px 15px white;
+}
+
+/*-----------------TEXT ALIGN CENTER---------*/
+h2, h3, #Logo, nav ul, #Acceuil, #clients p, #carClients h4{
+	text-align: center;
+} 
+
+/*-----------------FONT----------------------*/
+nav,#direct, #clients p, #carClients h4{
+	font-size:1.2em;
+}
+
+h2, h3, #direct,, nav, #listCorps li, #clients p,#carClients h4, #goRealisations{
+	font-weight: bold;
+}
+
+/*-----------------COLOR WHITE---------------*/
+#bannerTop p, #bannerTopButton, #clients, h2, h3, nav a, #Acceuil p,  #direct a, #address,#facebook, #instagram, #snap, footer p{
+	color: white;
+}
+
+/*-----------------BACKGROUND WHITE----------*/
+#listCorps, #carClients, #carClients div, #carMob{
+	background-color: white;
+}
+
+/*-----------------BACKGROUND RED DEGRADE----------*/
+nav li, #clients, #directReseaux{
+	background:rgb(255,104,104);
+	background:linear-gradient(349deg, rgba(255,104,104,1) 0%, rgba(193,50,58,1) 50%);
+}
+
+/*-----------------BACKGROUND BLEU DEGRADE----------*/
+body{
+	background:rgb(35,49,61);
+	background:linear-gradient(180deg, rgba(35,49,61,1) 15%, rgba(81,123,158,1) 50%, rgba(35,49,61,1) 85%);	width: 100%;text-shadow: 0 3px 5px black;
+}
+
+/*Bannière publicitaire de haut de page*/
+#bannerTop{
+	margin:0 auto;
+	padding:0.5em;
+	background-color:#c1323a;
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+#bannerTop p{
+	width:80%;
+	margin:0 auto;
+	font-size:0.7em;
+	font-weight:bolder;
+	text-align:center;
+}
+#bannerTopButton{
+	border-radius:0.3em;
+	margin:0.05em;
+	padding:0.05em 0.1em;
+}
+
+header, main{
+	font-family:ChampagneLimousines;
+}
+h2, h3{
+	width: 100%;
+}
+h2{
+	font-size:2em;
+	margin:0 auto 1em;
+}
+#Logo{
+	margin-top:1em;
+}
+#Logo img{
+	width:80%;
+	height:80%;
+}
+nav{
+	width:100%;
+}
+nav ul{
+	padding:0;
+	list-style-type:none;
+	display:flex;	
+}
+nav li{
+	cursor:pointer;
+	width:100%;
+	margin:0.3em;
+	padding:0.3em 0.1em;
+	margin-top:1em;
+	border-radius:2em;
+}
+nav a{
+	text-decoration:none;
+}
+#insta {
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+main{
+	width:90%;
+	margin:0 auto;
+}
+#Acceuil{
+	font-size:1.5em;
+}
+#Acceuil p{
+	font-size: 0.8em;
+}
+#metierBanner{
+	width:100%;
+	border-radius:2em;
+	display:flex;
+	justify-content:space-around;
+	background-image: url("../img/fond.png");
+}
+#listCorps{
+	width:60%;
+	margin-left:0.2em;
+	padding:0.2em;
+	list-style:none;
+	border-radius:2em;
+}
+#listCorps li{
+	margin:0.9em auto;
+	text-transform:uppercase;
+	font-size:0.7em;
+	text-shadow:none;
+}
+#listCorps li i{
+	color: #26f71f;	
+}
+#patchDiv{
+	width:45%;
+	padding:0.2em;
+	display:flex;
+	justify-content:center;
+	flex-direction:column;
+	align-items:flex-end;
+}
+#patchQualite, #patchDeplacement{
+	width: 80%;
+	border-radius: 50%;
+}
+/*-----------------------------        SECTION CHANTIERS   ------------------------------------*/
+#chantiers{display:flex;flex-direction: column;}
+#goRealisations{
+	background:rgb(35,49,61);
+	background:linear-gradient(180deg, rgba(35,49,61,1) 15%, rgba(81,123,158,1) 50%, rgba(35,49,61,1) 85%);	border-radius: 50%;width:15em;height:15em;text-transform: uppercase;margin:2em auto;text-align: center;	
+}
+#goRealisations h2{
+	padding:2em 0;
+}
+#goRealisations a{
+	text-decoration:none;
+}
+#clients{
+	width:80%;
+	padding-top:1em;
+	border-radius:2em;
+	margin:2em auto;
+	display:flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items:center;
+}
+/*-----------------------------        SECTION CONTACT	   ------------------------------------*/
+#contact i{
+	font-size:3.1em;
+	padding:0.3em;
+	border-radius:50%;
+}
+#directReseaux{
+	padding:1em;
+	border-radius:2em;
+}
+#direct{
+	display:flex;
+	text-align:center;
+}
+#direct a{
+	margin:0 auto;
+	text-decoration:none;
+}
+#callMe{
+	background:rgb(63,251,68);
+	background:linear-gradient(43deg, rgba(63,251,68,1) 43%, rgba(103,234,255,1) 100%);
+}
+#mailMe{
+	background:rgb(63,251,68);
+	background:linear-gradient(43deg, rgba(63,251,68,1) 0%, rgba(103,234,255,1) 49%);
+}
+#reseaux{
+	text-align:center;
+}
+#facebook, #instagram, #snap{
+	margin:0.2em;
+}
+#facebook{
+	background:rgb(0,255,110);
+	background:linear-gradient(257deg, rgba(0,255,110,1) 55%, rgba(255,255,255,1) 100%);
+}
+#instagram{
+	background:rgb(131,58,180);
+	background:linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+}
+#snap{
+	background:rgb(34,193,195);
+	background:linear-gradient(39deg, rgba(34,193,195,1) 0%, rgba(242,233,41,1) 50%);
+}
+#address{
+	margin-bottom:2em;
+	text-align:center;
+}
+#address i{
+	margin:0.7em auto 0;
+	font-size:1.5em;
+}
+footer p{
+	text-align:center;
+	width:100%;
+	margin:0 auto;
+	padding:0.5em;
+	background-color:#c1323a;
+	border-top:1px solid black;
+}
+.carousselRealisation{
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	flex-wrap:nowrap;
+}
+.one, .two, .three{
+	object-fit: cover;
+	width:30%;
+	margin:0 auto;
+	border-radius:1em;
+}
+/*-------------------CAROUSSEL PHOTO-------------------------*/
+.carousselPhoto{
+	position:static;
+	margin:-0.2em;
+	padding:0;
+	width:100%;
+	max-width:500%; 
+	overflow:hidden;
+}
+.carousselPhoto div{
+	position: relative;
+	display:flex;
+	flex-flow:row nowrap;
+}
+.carousselPhoto img{
+	float:left;
+	object-fit:contain;
+}
+#carClients{
+	width:12em;
+	text-shadow:none;
+	border-radius:50%;
+}
+@keyframes slidy{0%{left:0%;}100%{left:-844%;}}
+#carClients div{
+	width:800%;
+	margin:1em;
+	animation:10s slidy infinite;
+}
+#carClients img{
+	max-height:10em;
+}
+@keyframes slidydy{0%{left:0%;}100%{left:-505%;}}
+#carMob div{
+	width:500%;
+	animation:10s slidydy infinite;
+}	
+#carMob img{
+	max-height:7em;
+}
+/*-------------------REALISATIONS-------------------------*/
+#Realisations > p{
+	text-align:center;
+	color:white;
+}
+#mesRealisations{
+	margin:5em auto;
+	background-color:black;
+	border-radius:2em;
+}
+#mesRealisations div{
+	position:relative;
+	width:100%;
+}
+#mesRealisations div img{
+	max-width:100%;
+	min-width:100%;
+	/*margin: -1.2% auto 0;*/
+}
+#mesRealisations div p{	
+	color:white;
+	background:rgb(0,0,0);
+	background:radial-gradient(circle, rgba(0,0,0,0.5049370089832808) 0%, rgba(0,0,0,0.49653364763874297) 100%);width:100%;padding:3em;top:50%;left:50%;transform: translate(-50%, -50%);position: absolute;display: none;text-align:center;
+}
+
+
+/*      ECRAN TABLETTE     */
+@media screen and (min-width:700px) {
+	header{
+		width:95%;
+		display:flex;
+		flex-direction:row;
+		justify-content:space-around;
+		align-items:center;
+		margin:1em auto;
+	}
+	#Logo{
+		width:40%;
+	}
+	nav{
+		width:60%;
+	}
+	main{
+		width:80%;
+	}
+	#Acceuil{
+		font-size:1em;
+		margin:3em auto;
+	}
+	#Acceuil p{
+		font-size:1.5em;
+	}
+	#listCorps{
+		width:40%;
+		margin-left:-2em;
+	}
+	#listCorps li{
+		font-size:1.3em;
+		margin:0.7em auto;
+	}
+	#patchDiv{
+		margin-left:-3em;
+		width:30%;
+		flex-direction:row;
+		align-items:center;
+	}
+	#chantiers{
+		flex-direction:row;
+		justify-content:space-around;
+		align-items:center;
+	}
+	#clients{
+		width:40%;
+		padding:1em;
+		margin:1em;
+		justify-content:space-around;
+		background:rgb(35,49,61);
+		background:linear-gradient(180deg, rgba(35,49,61,1) 15%, rgba(81,123,158,1) 50%, rgba(35,49,61,1) 85%);box-shadow: 0 -2px 15px white;
+	}
+	@keyframes slidydy{0%{left:0%;}100%{left:-332%;}}
+	#carMob div{
+		width: 500%;
+		animation:12s slidydy infinite;
+	}	
+	#carMob img{
+		max-height:10em;
+	}
+	#carClients{
+		width:12em;
+		text-shadow:none;
+		border-radius:50%;
+	}
+	#carClients div{
+		width:200%;
+		margin:1em;
+	}
+	#carClients img{
+		max-height:10em;
+	}
+	#contact{
+		margin-top:2em;
+	}
+	#contact i{
+		font-size:3em;
+		padding:0.3em;
+	}
+	#address i{
+		font-size:1.5em;
+	}
+	#mesRealisations{
+		display:grid;
+		grid-template-columns:repeat(2, 1fr);align-items:center;}
+	}
+
+
+	/*      ECRAN PC     */
+	@media screen and (min-width:1024px) {
+		/*-----------------FONT----------------------*/
+		nav,#Acceuil p, #direct, #clients p, #carClients h4, .realisation h3, #Acceuil, #Acceuil p, #listCorps li{
+			font-size:1em;
+		}
+		header{
+			width:95%;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			align-items:center;
+			margin:1em auto;
+		}
+		#Logo{
+			width:25%;
+		}
+		nav{
+			width:50%;
+		}
+		nav li{
+			margin:0 1em;
+		}
+		#Acceuil{
+		margin:3em auto 0;
+		display:flex;
+		justify-content:space-around;
+		align-items:center;
+		}
+		#metierBanner{
+			width:40%;
+		}
+		#listCorps li{
+			margin:0.7em auto;
+		}
+		#chantiers{
+			width:95%;
+			margin:0 auto;
+		}
+		#clients{
+			padding:3em 0;
+			margin:0;
+			flex-direction: row;
+			background:none;
+			box-shadow:none;
+		}
+	/*--------SECTION CONTACT----------*/
+		#contact{
+			width:80%; 
+			margin:0 auto;
+		}
+		#directReseaux{
+			padding:1em 0 2em;
+			box-shadow:0 -2px 15px white;
+		}
+		#contactDirect{
+			display:flex;
+			flex-direction:row; 
+			justify-content:space-around;
+			align-items:top;
+		}
+		#direct p{
+			display:none;
+		}
+		#facebook, #instagram, #snap{
+			margin:0 0.2em;
+		}
+		#direct{
+			width:30%;
+		}
+		#reseaux{
+			width:40%;
+		}
+	/*--------CAROUSSEL PHOTO----------*/
+		@keyframes slidy{0%{left:0%;}100%{left:-901%;}}
+		#carClients div{
+		animation:12s slidy infinite;
+	}
+		@keyframes slidydy{0%{left:0%;}100%{left:-179%;}}
+		#carMob div{
+			animation:15s slidydy infinite;
+		}
+		#carClients{
+			width:9em;
+			height:9em;
+		}
+		#carClients img{
+			max-height:8em;
+		}
+		#address i{
+			font-size:1em;
+		}
+		#mesRealisations{
+			display:grid;
+			grid-template-columns:repeat(3, 1fr);}
+		}
